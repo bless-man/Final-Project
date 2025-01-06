@@ -58,7 +58,7 @@ figure {
 @media screen and (min-width: 772px) {
   img {
     border: 2px solid var(--border-color);
-    border-radius: 35px;
+    border-radius: 50%;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -79,3 +79,9 @@ figure {
     }
   }
 }
+
+@media (prefers-reduced-motion) {
+    html {
+        scroll-behavior: unset;
+      }
+  }
