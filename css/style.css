@@ -1,0 +1,81 @@
+@import url('reset.css');
+@import url('colors.css');
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+p,
+figcaption {
+  color: var(--text-color);
+}
+body {
+  background-color: var(--background-color);
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 1rem 0;
+}
+
+p {
+  padding-bottom: 3rem;
+}
+
+main {
+  margin: 0 1rem;
+}
+figcaption {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.95em;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+figure {
+  text-align: center;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+@media screen and (min-width: 772px) {
+  img {
+    border: 2px solid var(--border-color);
+    border-radius: 35px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    :last-child {
+      grid-column: 1 /-1;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  figure img {
+    border-radius: unset;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    :nth-child(3n) {
+      grid-column: 1 /-1;
+    }
+  }
+}
