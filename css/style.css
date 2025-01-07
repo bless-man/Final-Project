@@ -6,6 +6,7 @@ html {
 h1,
 h2,
 p,
+.top-up,
 figcaption {
   color: var(--text-color);
 }
@@ -24,6 +25,9 @@ p {
 
 main {
   margin: 0 1rem;
+}
+footer {
+  margin: 1rem;
 }
 figcaption {
   padding: 1rem;
@@ -82,7 +86,7 @@ figure {
 }
 
 @media (prefers-reduced-motion) {
-    html {
-        scroll-behavior: unset;
-      }
+  html {
+    scroll-behavior: unset;
   }
+}
