@@ -1,13 +1,15 @@
 :root {
-  --background-color: #ffffff;
+  --background-color: #565050;
   --text-color: #000000;
   --border-color: #d1caca;
+  --image-bg: #fdf8f8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #181818;
+    --background-color: #270f54;
     --text-color: #ffffff;
-    --border-color: #dad6d6;
+    --border-color: #000000;
+    --image-bg: #000000;
   }
 }

@@ -46,6 +46,7 @@ img {
 }
 
 figure {
+  background-color: var(--image-bg);
   text-align: center;
   margin: 0;
 }
